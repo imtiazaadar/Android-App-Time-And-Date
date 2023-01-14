@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#202020"
+    android:layout_gravity="center">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+
+        <AnalogClock
+            android:id="@+id/analogid"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:backgroundTint="@color/cyan"
+            android:foregroundTint="#202020"
+
+            >
+        </AnalogClock>
+
+        <TextClock
+            android:id="@+id/digitalid"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cyan"
+            android:textSize="70sp"
+            android:format12Hour="hh:mm:ss a"
+            android:format24Hour="HH:mm:ss a"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            >
+
+        </TextClock>
+
+        <TextClock
+            android:id="@+id/digitalid2"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cyan"
+            android:textSize="60sp"
+            android:format12Hour="EEEE\ndd MMMM\nyyyy"
+            android:format24Hour="EEEE\ndd MMMM\nyyyy"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textStyle="bold"
+            >
+
+        </TextClock>
+        <Button
+            android:id="@+id/exitB"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#660033"
+            android:text="EXIT"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            app:cornerRadius="50dp"
+            android:backgroundTint="@color/white"
+
+            ></Button>
+
+        <TextView
+            android:id="@+id/textviewid1"
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="APP BY IMTIAZ ADAR"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textColor="@color/cyan"
+            android:textStyle="bold"
+
+            ></TextView>
+
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
